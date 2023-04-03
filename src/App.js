@@ -7,11 +7,10 @@ function App() {
     <>
       <div className="App">
         <header className="header">
-          <h1 style={{ color: "green" }}>
-            🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸
-          </h1>
+          {/* <img src="https://duomly.nyc3.digitaloceanspaces.com/articles/coding/alps-lake.jpg" /> */}
+          <h1 style={{ color: "green" }}>Prvi radovi u React Project</h1>
         </header>
-        <Greeting appName={"my first app"} username={"Hatidza"} />
+        <Greeting appName={"MyFirstAppReact"} username={"."} />
       </div>
     </>
   );
