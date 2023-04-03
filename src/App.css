@@ -1,20 +1,12 @@
 header {
   height: 15vh;
-  background-color: lightgreen;
+  background-color: rgb(144, 238, 236);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
 }
 
-/* .main {
-  width: 50%;
-  height: 160px;
-  background-color: limegreen;
-  margin: 50px auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-} */
+.header h1 {
+  color: black;
+}
