@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 // import Greeting from "./components/Greetings/Greeting";
 // import { Navbar } from "./components/Navbar/Navbar";
-import MojJs from "./components/PrviProjekat/MojJs";
+import MojJs from "./components/prviProjekat/MojJs";
 import informacije from "./common1/informacije.json";
 
 // const persons = [
@@ -72,8 +72,9 @@ function App() {
               name={info.name}
               stars={info.stars}
               rating={info.rating}
-              reviews={info.rewievs}
-              location={info.location}
+              reviews={info.reviews}
+              ocena={info.ocena}
+              komentar={info.komentar}
             />
           ))}
           <div>
