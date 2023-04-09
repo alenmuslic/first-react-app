@@ -1,46 +1,97 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-// import Greeting from "./components/Greeting";
-// import Greeting from "./components/Greeting/Greeting";
-// import PersonCard from "./components/Cards/PersonCard";
-import MojaKartica from "./components/mojRad/MojaKartica";
+import React, { useState } from "react";
+import "./App.css";
+// import Greeting from "./components/Greetings/Greeting";
+// import { Navbar } from "./components/Navbar/Navbar";
+import MojJs from "./components/PrviProjekat/MojJs";
+import informacije from "./common1/informacije.json";
 
-// function App() {
-// return (
-//     <>
-//       <div className="App">
-//         {/* <header className="header">
-//           <img src="https://duomly.nyc3.digitaloceanspaces.com/articles/coding/alps-lake.jpg" />
-//           <h1 style={{ color: "green" }}>Prvi radovi u React Project</h1>
-//         </header> */}
-//         {/* <Greeting appName={"MyFirstAppReact"} username={"."} /> */}
-//         <PersonCard />
-//       </div>
-//     </>
-//   );
-// }
+// const persons = [
+//   {
+//     imageURL: "https://avatars.githubusercontent.com/u/89378479?v=4",
+//     fullName: "Dzenan Kosuta",
+//     description: "Dzenan is rising Web developer...",
+//     location: "Novi pazar, Serbia",
+//     goToRepositories: "https://github.com/dzenankosuta?tab=repositories",
+//   },
+//   {
+//     imageURL: "https://avatars.githubusercontent.com/u/111905831?v=4",
+//     fullName: "Alen Muslic",
+//     description: "Alen is rising Web developer...",
+//     location: "Novi pazar, Serbia",
+//     goToRepositories: "https://github.com/alenmuslic?tab=repositories",
+//   },
+//   {
+//     imageURL:
+//       "https://www.borisradivojkov.com/assets/images/profesionalni-poslovni-portret-rukovodioca-600x600.jpg",
+//     fullName: "Aladin Zecic",
+//     description: "Aladin is rising Web developer...",
+//     location: "Novi pazar, Serbia",
+//     goToRepositories: "https://github.com/aladinzecic?tab=repositories",
+//   },
+//   {
+//     imageURL: "https://avatars.githubusercontent.com/u/111905979?v=4",
+//     fullName: "Haris Muslic",
+//     description: "Haris is rising Web developer...",
+//     location: "Novi pazar, Serbia",
+//     goToRepositories: "https://github.com/harismuslic04?tab=repositories",
+//   },
+// ];
 
 function App() {
+  // const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
+  // setCount je metoda pomocu koje menjamo vrednost count state_a:
+  const increaseCount = () => {
+    setCount(count + 1);
+  };
+  const decreaseCount = () => {
+    setCount(count - 1);
+  };
+  // const x = 10;
   return (
+    //  React.createElement("p", {}, "Neki paragraf");
     <>
-      <div
-        style={{
-          width: "90%",
-          display: "grid",
-          gridTemplateColumns: "repeat(4,250px)",
-          gridGap: "100px",
-          // gridAutoRows: "minmax(420px,auto)",
-          justifyContent: "center",
-        }}
-      >
-        <MojaKartica imgUrl />
-        <MojaKartica />
-        <MojaKartica />
-        <MojaKartica />
-        <MojaKartica />
-        <MojaKartica />
-        <MojaKartica />
-        <MojaKartica />
+      {" "}
+      {/* Fragment - najcesce se koristi za wrappovanje */}
+      <div className="App">
+        {/* <Navbar><p>Samo za primer</p></Navbar> */}
+        {/* <Greeting appName={"Our First App"} username={"Bakir Ujkanovic"} /> */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 380px)",
+            justifyContent: "center",
+            gridAutoRows: "minmax(280px, auto)",
+            gridGap: "50px",
+            columnGap: "30px",
+          }}
+        >
+          {informacije.map((info) => (
+            <MojJs
+              imageURL={info.imageURL}
+              name={info.name}
+              stars={info.stars}
+              rating={info.rating}
+              reviews={info.rewievs}
+              location={info.location}
+            />
+          ))}
+          <div>
+            <button style={{ width: "40px" }} onClick={decreaseCount}>
+              -
+            </button>
+            <p>{count}</p>
+            <button
+              style={{ width: "40px" }}
+              onClick={() => {
+                console.log("povecanje");
+                setCount(count + 1);
+              }}
+            >
+              +
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
