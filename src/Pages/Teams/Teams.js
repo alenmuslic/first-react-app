@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Teams() {
   const navigation = useNavigate();
-  const [teams, setTeams] = useState(teamsJSON);
+  const [teams, setTeams] = useState(null);
   console.log(teams);
 
   // Brisanje tima:
@@ -23,6 +23,8 @@ export default function Teams() {
           matches={team.matches}
           points={team.points}
           deleteTeam={() => deleteTeam(team.id)}
+          extended={extended}
+          setExtended={setExtended}
         />
       ))}
       <Link to={"/quotes"}>Vidi citate</Link>
