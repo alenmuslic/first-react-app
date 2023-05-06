@@ -7,7 +7,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Hotels from "./pages/Hotels/Hotels";
 import Teams from "./pages/Teams/Teams";
 import Quotes from "./pages/Quotes/Quotes";
-import Hotel from "./pages/hotel/Hotel";
+import Hotel from "./pages/hotel/hotel";
 
 // const poruke = [
 //   "Danas je subota",

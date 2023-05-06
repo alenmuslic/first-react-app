@@ -1,6 +1,33 @@
 .formContainer {
-  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  border-radius: 10px;
+  height: 400px;
+  justify-content: space-between;
+  align-items: start;
   margin: auto;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  width: 600px;
+  text-align: center;
+  padding: 50px 15px 0px 0;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-indent: 20px;
+}
+
+.button {
+  background-color: #2980b9;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
+
+.button input:hover {
+  border-color: #2691d9;
+  transition: 0.5s;
 }
