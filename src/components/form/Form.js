@@ -114,9 +114,7 @@ function Form() {
         <br />
         <br />
 
-        <button className="button" type="submit">
-          Potvrdi
-        </button>
+        <button type="submit">Potvrdi</button>
       </form>
     </div>
   );
