@@ -1,6 +1,11 @@
 .header {
   height: 15vh;
-  background-color: rgb(36, 51, 91);
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 0, 255),
+    rgba(227, 8, 227, 0.429)
+  );
+  /* background-color: rgb(36, 51, 91); */
   display: flex;
   justify-content: flex-end;
   align-items: center;

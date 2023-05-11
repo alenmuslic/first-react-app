@@ -2,11 +2,12 @@
   margin-top: 80px;
   margin: auto;
   width: 80%;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   gap: 10px;
+  /* background-color: linear-gradient(to right, orange, purple); */
 }
 .card2 {
   width: 100%;
@@ -22,4 +23,5 @@
   text-align: center;
   background-color: rgb(251, 251, 154);
   margin-bottom: 20px;
+  background-color: linear-gradient(to right, orange, purple);
 }
