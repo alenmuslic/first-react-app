@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import Form from "./components/Form/Form";
@@ -10,6 +10,7 @@ import Quotes from "./pages/Quotes/Quotes";
 import Hotel from "./pages/hotel/Hotel";
 import { Register } from "./pages/Register/Register";
 import { Login } from "./pages/Login/Login";
+import { AppContext } from "./context/AppContext";
 
 // const poruke = [
 //   "Danas je subota",
@@ -40,6 +41,8 @@ function App() {
   //   const reversed = _arr.reverse();
   //   setArr(reversed);
   // };
+
+  const { token } = useContext(AppContext);
 
   return (
     //  React.createElement("p", {}, "Neki paragraf");
@@ -98,7 +101,7 @@ function App() {
         </div> */}
       <Navbar />
       <Routes>
-        <Route path="/" element={<Form />} />
+        <Route path="/" element={token ? <Hotels /> : <Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/about-us" element={<AboutUs />} />
