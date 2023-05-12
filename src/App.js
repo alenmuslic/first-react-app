@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar/Navbar";
 import Form from "./components/Form/Form";
@@ -48,8 +48,6 @@ function App() {
     const localToken = localStorage.getItem("token");
     setToken(localToken);
   }, []);
-
-  // const { token } = useContext(AppContext);
 
   return (
     //  React.createElement("p", {}, "Neki paragraf");
