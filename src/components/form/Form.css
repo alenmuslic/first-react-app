@@ -3,4 +3,9 @@
   margin: auto;
   margin-top: 150px;
   margin-bottom: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 0, 255),
+    rgba(227, 8, 227, 0.429)
+  );
 }

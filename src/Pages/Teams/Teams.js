@@ -16,7 +16,7 @@ export default function Teams() {
     setTeams(filteredTeams);
   };
   return (
-    <div>
+    <div className="informacije">
       {teams.map((team) => (
         <TeamCard
           key={team.id}
@@ -30,8 +30,12 @@ export default function Teams() {
           id={team.id}
         />
       ))}
-      <Link to={"/quotes"}>Vidi citate</Link>
-      <button onClick={() => navigation("/hotels")}>Hotels</button>
+      <Link className="vidi" to={"/quotes"}>
+        Link(citati)
+      </Link>
+      <button className="Hoteli" onClick={() => navigation("/hotels")}>
+        Hotels
+      </button>
     </div>
   );
 }

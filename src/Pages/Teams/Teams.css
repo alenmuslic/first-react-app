@@ -1,0 +1,18 @@
+.informacije {
+  font-size: 25px;
+  color: rgb(60, 47, 47);
+}
+.vidi {
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  color: blue;
+  font-style: oblique;
+}
+
+.Hoteli {
+  position: relative;
+  top: 40px;
+  left: 20px;
+}

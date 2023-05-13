@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Arsenal",
+    "name": "Man City",
     "points": 72,
     "matches": 30,
     "information": "Treci najuspesniji klub u Engleskoj."
   },
   {
     "id": 2,
-    "name": "Man City",
+    "name": "Arsenal",
     "points": 64,
     "matches": 30,
     "information": "Tim koji je osnovan 2009. godine."

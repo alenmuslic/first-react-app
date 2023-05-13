@@ -11,7 +11,7 @@ import Hotel from "./pages/hotel/Hotel";
 import { Register } from "./pages/Register/Register";
 import { Login } from "./pages/Login/Login";
 import { AppContext } from "./context/AppContext";
-import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
+// import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 // const poruke = [
 //   "Danas je subota",
@@ -109,46 +109,11 @@ function App() {
         <Route path="/" element={token ? <Hotels /> : <Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route
-          path="/about-us"
-          element={
-            <ProtectedRoute>
-              <AboutUs />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/hotels"
-          element={
-            <ProtectedRoute>
-              <Hotels />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/teams"
-          element={
-            <ProtectedRoute>
-              <Teams />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/quotes"
-          element={
-            <ProtectedRoute>
-              <Quotes />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/hotels/:id"
-          element={
-            <ProtectedRoute>
-              <Hotel />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/hotels" element={<Hotels />} />
+        <Route path="/teams" element={<Teams />} />
+        <Route path="/quotes" element={<Quotes />} />
+        <Route path="/hotels/:id" element={<Hotel />} />
       </Routes>
     </>
   );
