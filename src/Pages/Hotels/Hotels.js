@@ -8,7 +8,7 @@ export default function Hotels() {
     <div className="hotels">
       {hotels.map((hotel) => (
         <a href={"hotels/" + hotel.id.toString()}>
-          <HotelCard
+          <HotelCard 
             key={hotel.id}
             imageURL={hotel.imageURL}
             name={hotel.name}

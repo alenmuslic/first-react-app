@@ -29,7 +29,7 @@ export default function AboutUs() {
   return (
     <div className="about-us-container">
       {persons.map((person) => (
-        <PersonCard
+        <PersonCardn
           key={person.id}
           imageURL={person.imageURL}
           fullName={person.fullName}

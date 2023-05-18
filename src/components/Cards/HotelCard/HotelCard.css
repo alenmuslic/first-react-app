@@ -42,3 +42,10 @@
   /* background-color: rgb(98, 223, 223); */
   background-color: rgba(54, 96, 196, 0.233);
 }
+
+/* hoteldesc { */
+/* text-decoration: none; */
+/* } */
+a {
+  text-decoration: none;
+}
